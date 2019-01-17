@@ -6,7 +6,9 @@
     "description": "Hovering over a course name will give more info",
 
     "content_scripts": [{
-        "js": ["content.js"],
+        "js": ["jquery-3.3.1.js", "content.js"],
         "matches": ["<all_urls>"]
-    }]
+    }],
+
+    "permissions": ["http://www.ucalendar.uwaterloo.ca/"]
 }
